@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CLONE1</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-headColor: #0f0f12;
+        --color-bodyColor: #0f0f12;
+        --color-textBigColor: #cccccc;
+        --color-footColorText: #F85430;
+        
+        --text-bigText: 100px;
+        --text-footText: 100px;
+      }
+    </style>
+    <link rel="stylesheet" href="styleclone.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="bg-headColor text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <!-- Logo -->
+          <!-- <a href="#" class="text-2xl font-bold">Brand</a> -->
+          <img
+            class="h-8 w-auto"
+            src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+            alt=""
+          />
+          <!-- Menu (Desktop) -->
+          <div class="hidden md:flex space-x-6 justify-center w-full">
+            <a href="#" class="hover:text-gray-400">Home</a>
+            <a href="#" class="hover:text-gray-400">About</a>
+            <a href="#" class="hover:text-gray-400">Services</a>
+            <a href="#" class="hover:text-gray-400">Contact</a>
+          </div>
+
+          <!-- Mobile Menu Button -->
+          <button id="menu-btn" class="md:hidden focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16m-7 6h7"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="menu"
+          class="hidden md:hidden flex flex-col space-y-2 mt-4 text-center"
+        >
+          <a href="#" class="block py-2 hover:text-gray-400">Home</a>
+          <a href="#" class="block py-2 hover:text-gray-400">About</a>
+          <a href="#" class="block py-2 hover:text-gray-400">Services</a>
+          <a href="#" class="block py-2 hover:text-gray-400">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <!-- end header -->
+    <div class="bg-body bg-bodyColor h-full w-full bg-index">
+      <div class="h-100 bg-black">
+        <div
+          class="text-center text-white font-bold text-bigText text-textBigColor"
+        >
+          "Il n'y a pas de richesse <br />
+          sans créativité"
+        </div>
+      </div>
+
+      <!-- part 1 scrolling -->
+      <div class="scrolling-text-container">
+        <div
+          class="scrolling-text-inner"
+          style="--marquee-speed: 10s; --direction: scroll-left"
+          role="marquee"
+        >
+          <div class="scrolling-text">
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">Directrice Artistique</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">Webdesign</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">Print</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">Illustration</div>
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">UI design</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">UX design</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">Motion design</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">Interactiv design</div>
+          </div>
+          <div class="scrolling-text">
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">Directrice Artistique</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">Webdesign</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">Print</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">Illustration</div>
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">UI design</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">UX design</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">Motion design</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">Interactiv design</div>
+
+            <!-- end scrolling right to left -->
+          </div>
+        </div>
+        <!-- end scrolling text first -->
+      </div>
+      <!-- part 2 scrolling -->
+      <div class="scrolling-text-container">
+        <div
+          class="scrolling-text-inner"
+          style="--marquee-speed: 10s; --direction: scroll-right"
+          role="marquee"
+        >
+          <div class="scrolling-text">
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">Directrice Artistique</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">Webdesign</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">Print</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">Illustration</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">UI design</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">UX design</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">Motion design</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">Interactiv design</div>
+          </div>
+          <div class="scrolling-text">
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">Directrice Artistique</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">Webdesign</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">Print</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">Illustration</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">UI design</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">UX design</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">Motion design</div>
+
+            <div class="flex item-center justify-center mt-1">
+              <div class="w-4 h-4 border-2 border-orange-500 rotate-45"></div>
+            </div>
+            <div class="scrolling-text-item">Interactiv design</div>
+            <!-- end scrolling left to right -->
+          </div>
+        </div>
+      </div>
+      <!-- end scrolling -->
+       
+      <!-- card section -->
+      <!-- <div class="bodyCard">
+        <div class="card">Magic Card</div>
+      </div>
+    </div> -->
+
+    <div class="grid grid-cols-2 gap-6 gap-x-20 p-6 bg-black min-h-screen">
+      <!-- Card 1 -->
+      <div class="relative rounded-2xl overflow-hidden bg-blue-900 text-white shadow-lg mt-10 ms-70 mb-20 h-100 w-100">
+        <!-- <img src="path-to-image-1.jpg" alt="Bazuli" class="w-full h-full object-cover opacity-60"> -->
+        <div class="absolute inset-0 flex items-center justify-center">
+          <h1 class="text-4xl font-bold">LAUNCHR</h1>
+        </div>
+        <div class="absolute inset-0 p-4 flex flex-col justify-end">
+          <h2 class="text-lg font-semibold">Bazuli</h2>
+          <p class="text-sm">Illustration | Webdesign</p>
+          <button class="absolute bottom-4 right-4 w-8 h-8 rounded-full bg-white text-black flex items-center justify-center">
+            &rarr;
+          </button>
+        </div>
+      </div>
+    
+      <!-- Card 2 -->
+      <div class="relative rounded-2xl overflow-hidden bg-blue-800 text-white shadow-lg mt-30 me-20 h-100 w-100">
+        <!-- <img src="path-to-image-2.jpg" alt="Opentri" class="w-full h-full object-cover opacity-60"> -->
+        <div class="absolute inset-0 flex items-center justify-center">
+          <h1 class="text-4xl font-bold">Opentri</h1>
+        </div>
+        <div class="absolute inset-0 p-4 flex flex-col justify-end">
+          <h2 class="text-lg font-semibold">Opentri</h2>
+          <p class="text-sm">Identity</p>
+          <button class="absolute bottom-4 right-4 w-8 h-8 rounded-full bg-white text-black flex items-center justify-center">
+            &rarr;
+          </button>
+        </div>
+      </div>
+    
+      <!-- Card 3 -->
+      <div class="relative rounded-2xl overflow-hidden bg-gray-900 text-white shadow-lg ms-70 mb-20 h-100 w-100">
+        <!-- <img src="path-to-image-3.jpg" alt="Webisland 2022" class="w-full h-full object-cover opacity-60"> -->
+        <div class="absolute inset-0 flex items-center justify-center">
+          <h1 class="text-4xl font-bold">Webisland 2022</h1>
+        </div>
+        <div class="absolute inset-0 p-4 flex flex-col justify-end">
+          <h2 class="text-lg font-semibold">Webisland 2022</h2>
+          <p class="text-sm">Identity | Webdesign</p>
+          <button class="absolute bottom-4 right-4 w-8 h-8 rounded-full bg-white text-black flex items-center justify-center">
+            &rarr;
+          </button>
+        </div>
+      </div>
+    
+      <!-- Card 4 -->
+      <div class="relative rounded-2xl overflow-hidden bg-purple-800 text-white shadow-lg mt-30 me-20 h-100 w-100">
+        <!-- <img src="path-to-image-4.jpg" alt="Launchr" class="w-full h-full object-cover opacity-60"> -->
+        <div class="absolute inset-0 flex items-center justify-center">
+          <h1 class="text-4xl font-bold">LAUNCHR</h1>
+        </div>
+        <div class="absolute inset-0 p-4 flex flex-col justify-end">
+          <h2 class="text-lg font-semibold">Launchr</h2>
+          <p class="text-sm">Identity</p>
+          <button class="absolute bottom-4 right-4 w-8 h-8 rounded-full bg-white text-black flex items-center justify-center">
+            &rarr;
+          </button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- FOOTER -->
+<footer>
+  <div class="w-full h-full text-white text-footText font-bold"><h1>A propos</h1>
+    <h1 class="text-footColorText">Commencer un projet</h1></div>
+
+</footer>
+    <!-- end body -->
+  </body>
+  <script>
+    const menuBtn = document.getElementById("menu-btn");
+    const menu = document.getElementById("menu");
+
+    menuBtn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+</html>
